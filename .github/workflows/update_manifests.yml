@@ -46,7 +46,7 @@ jobs:
           else
               echo "The manifest file does not exist, so I will create a new manifest from scratch."
           fi
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add("General")'
+      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
         env:
           JULIA_PKG_SERVER: ""
       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
