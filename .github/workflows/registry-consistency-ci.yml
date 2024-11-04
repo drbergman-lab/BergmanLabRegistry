@@ -45,10 +45,10 @@ jobs:
       - run: chmod 400 .ci/Project.toml
       - run: chmod 400 .ci/Manifest.toml
         if: ${{ matrix.version != 'nightly' }}
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add("General")'
+      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
         env:
           JULIA_PKG_SERVER: ""
       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
       - run: .ci/instantiate.sh
       - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.precompile()'
-      - run: julia --color=yes --project=.ci/ -e 'import RegistryCI; RegistryCI.test(registry_deps=["https://github.com/drbergman/PCVCTRegistry"])'
+      - run: julia --color=yes --project=.ci/ -e 'import RegistryCI; RegistryCI.test(registry_deps=["https://github.com/JuliaRegistries/General"])'
