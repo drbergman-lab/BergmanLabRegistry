@@ -19,7 +19,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.TAGBOT_TOKEN }}
 
-# jobs:
+# jobs: #
 #   trigger:
 #     timeout-minutes: 30
 #     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.pull_request.merged || github.event_name == 'push'
