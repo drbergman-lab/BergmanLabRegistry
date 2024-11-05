@@ -11,29 +11,39 @@ on:
   workflow_dispatch:
 jobs:
   trigger:
-    timeout-minutes: 30
     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.pull_request.merged || github.event_name == 'push'
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
-      - name: Cache artifacts
-        uses: julia-actions/cache@824243901fb567ccb490b0d0e2483ccecde46834 # v2.0.5
-      - run: write(ENV["GITHUB_OUTPUT"], "manifest_version=$(VERSION.major).$(VERSION.minor)")
-        shell: julia --color=yes --project=.ci/ {0}
-        id: manifest_version
-      - run: echo "The manifest is .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml"
-      - run: rm -rf .ci/Manifest.toml
-      - run: mv .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml .ci/Manifest.toml
-      - run: rm -rf .ci/Manifest.*.toml
-      - run: chmod 400 .ci/Project.toml
-      - run: chmod 400 .ci/Manifest.toml
-      # - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
-        env:
-          JULIA_PKG_SERVER: ""
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
-      - run: .ci/instantiate.sh
-      - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.precompile()'
-      - run: julia --color=yes --project=.ci/ -e 'using RegistryCI.TagBot; TagBot.main()'
+      - run: julia --project=.ci -e 'using Pkg; Pkg.instantiate(); Pkg.add("RegistryCI")'
+      - run: julia --project=.ci -e 'using RegistryCI.TagBot; TagBot.main()'
         env:
           GITHUB_TOKEN: ${{ secrets.TAGBOT_TOKEN }}
+
+# jobs:
+#   trigger:
+#     timeout-minutes: 30
+#     if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' || github.event.pull_request.merged || github.event_name == 'push'
+#     runs-on: ubuntu-latest
+#     steps:
+#       - uses: actions/checkout@eef61447b9ff4aafe5dcd4e0bbf5d482be7e7871 # v4.2.1
+#       - name: Cache artifacts
+#         uses: julia-actions/cache@824243901fb567ccb490b0d0e2483ccecde46834 # v2.0.5
+#       - run: write(ENV["GITHUB_OUTPUT"], "manifest_version=$(VERSION.major).$(VERSION.minor)")
+#         shell: julia --color=yes --project=.ci/ {0}
+#         id: manifest_version
+#       - run: echo "The manifest is .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml"
+#       - run: rm -rf .ci/Manifest.toml
+#       - run: mv .ci/Manifest.${{ steps.manifest_version.outputs.manifest_version }}.toml .ci/Manifest.toml
+#       - run: rm -rf .ci/Manifest.*.toml
+#       - run: chmod 400 .ci/Project.toml
+#       - run: chmod 400 .ci/Manifest.toml
+#       # - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
+#       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
+#         env:
+#           JULIA_PKG_SERVER: ""
+#       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
+#       - run: .ci/instantiate.sh
+#       - run: julia --color=yes --project=.ci/ -e 'import Pkg; Pkg.precompile()'
+#       - run: julia --color=yes --project=.ci/ -e 'using RegistryCI.TagBot; TagBot.main()'
+#         env:
+#           GITHUB_TOKEN: ${{ secrets.TAGBOT_TOKEN }}
