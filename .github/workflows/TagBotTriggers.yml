@@ -27,7 +27,8 @@ jobs:
       - run: rm -rf .ci/Manifest.*.toml
       - run: chmod 400 .ci/Project.toml
       - run: chmod 400 .ci/Manifest.toml
-      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
+      # - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec("General"), Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
+      - run: julia --color=yes -e 'import Pkg; Pkg.Registry.add([Pkg.RegistrySpec(url = "https://github.com/drbergman/PCVCTRegistry.git")])'
         env:
           JULIA_PKG_SERVER: ""
       - run: julia --color=yes -e 'import Pkg; Pkg.Registry.update()'
