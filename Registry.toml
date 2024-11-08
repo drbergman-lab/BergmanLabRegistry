@@ -4,4 +4,3 @@ repo = "https://github.com/drbergman/PCVCTRegistry"
 
 [packages]
 3c374bc7-7384-4f83-8ca0-87b8c727e6ff = { name = "pcvct", path = "P/pcvct" }
-bad69253-e2d7-49f9-a0cf-2fd158c7c32b = { name = "PhysiCellXMLRules", path = "P/PhysiCellXMLRules" }
