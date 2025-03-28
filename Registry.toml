@@ -3,6 +3,7 @@ uuid = "ac5acf56-370c-4ac8-b895-7453b15dc18b"
 repo = "https://github.com/drbergman/PCVCTRegistry"
 
 [packages]
+1da3c5ec-5de6-497d-83f1-8bbf7fdc92ec = { name = "PairCorrelationFunction", path = "P/PairCorrelationFunction" }
 3c374bc7-7384-4f83-8ca0-87b8c727e6ff = { name = "pcvct", path = "P/pcvct" }
 515ed340-d2f8-4e13-b70e-c9ebab3e992f = { name = "PhysiCellECMCreator", path = "P/PhysiCellECMCreator" }
 bad69253-e2d7-49f9-a0cf-2fd158c7c32b = { name = "PhysiCellXMLRules", path = "P/PhysiCellXMLRules" }
