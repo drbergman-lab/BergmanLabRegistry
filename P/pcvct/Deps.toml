@@ -28,6 +28,11 @@ PhysiCellECMCreator = "515ed340-d2f8-4e13-b70e-c9ebab3e992f"
 AutoHashEquals = "15f4f7f2-30c1-5605-9d31-71845cf9641f"
 TOML = "fa267f1f-6049-4f14-aa54-33bafae1ed76"
 
+["0.0.20 - 0"]
+Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
+MetaGraphsNext = "fa8bd995-216d-47f1-8a91-f3b68fbeb377"
+PairCorrelationFunction = "1da3c5ec-5de6-497d-83f1-8bbf7fdc92ec"
+
 ["0.0.5 - 0"]
 PhysiCellXMLRules = "bad69253-e2d7-49f9-a0cf-2fd158c7c32b"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
