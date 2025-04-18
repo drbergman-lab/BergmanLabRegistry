@@ -24,23 +24,30 @@ LinearAlgebra = "1.10.0 - 1"
 ["0.0.12 - 0.0.14"]
 PhysiCellXMLRules = "0.0.3"
 
-["0.0.15 - 0"]
-PhysiCellECMCreator = "0.0.3"
-PhysiCellXMLRules = "0.0.4"
-
 ["0.0.15 - 0.0.19"]
 PhysiCellCellCreator = "0.0.3"
+
+["0.0.15 - 0.0.20"]
+PhysiCellECMCreator = "0.0.3"
+PhysiCellXMLRules = "0.0.4"
 
 ["0.0.16 - 0"]
 AutoHashEquals = "2.2.0 - 2"
 TOML = "1.0.3 - 1"
+
+["0.0.20"]
+PhysiCellCellCreator = "0.0.4"
 
 ["0.0.20 - 0"]
 Graphs = "1.12.0 - 1"
 LinearAlgebra = "1.10 - 1"
 MetaGraphsNext = "0.7.2 - 0.7"
 PairCorrelationFunction = "0.0.11"
-PhysiCellCellCreator = "0.0.4"
+
+["0.0.21 - 0"]
+PhysiCellCellCreator = "0.0.5"
+PhysiCellECMCreator = "0.0.4"
+PhysiCellXMLRules = "0.0.8"
 
 ["0.0.5 - 0"]
 Pkg = "1.10.0 - 1"
