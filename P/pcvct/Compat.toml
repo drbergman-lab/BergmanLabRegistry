@@ -45,12 +45,18 @@ MetaGraphsNext = "0.7.2 - 0.7"
 PairCorrelationFunction = "0.0.11"
 
 ["0.0.21 - 0"]
+PhysiCellXMLRules = "0.0.8"
+
+["0.0.21 - 0.0.23"]
 PhysiCellCellCreator = "0.0.5"
 PhysiCellECMCreator = "0.0.4"
-PhysiCellXMLRules = "0.0.8"
 
 ["0.0.23 - 0"]
 Compat = "4.16.0 - 4"
+
+["0.0.24 - 0"]
+PhysiCellCellCreator = "0.0.6"
+PhysiCellECMCreator = "0.0.5"
 
 ["0.0.5 - 0"]
 Pkg = "1.10.0 - 1"
