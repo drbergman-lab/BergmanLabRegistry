@@ -5,3 +5,6 @@ LightXML = "9c8b4983-aa76-5018-a973-4c85ecc9e179"
 Optimization = "7f7a1694-90dd-40f0-9382-eb1efda571ba"
 OptimizationOptimJL = "36348300-93cb-4f02-beb5-3c3902f8871e"
 Polynomials = "f27b6e38-b328-58d1-80ce-0feddd5e7a45"
+
+["0.0.5 - 0"]
+Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
