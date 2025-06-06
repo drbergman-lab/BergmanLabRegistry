@@ -8,3 +8,4 @@ repo = "https://github.com/drbergman/PCVCTRegistry"
 515ed340-d2f8-4e13-b70e-c9ebab3e992f = { name = "PhysiCellECMCreator", path = "P/PhysiCellECMCreator" }
 bad69253-e2d7-49f9-a0cf-2fd158c7c32b = { name = "PhysiCellXMLRules", path = "P/PhysiCellXMLRules" }
 eac91067-0c6e-4a29-b848-3b4e7cf67017 = { name = "PhysiCellCellCreator", path = "P/PhysiCellCellCreator" }
+ec939353-8009-4f22-a497-1a1b0ca06ccd = { name = "ModelManagerStudio", path = "M/ModelManagerStudio" }
