@@ -36,6 +36,9 @@ PairCorrelationFunction = "1da3c5ec-5de6-497d-83f1-8bbf7fdc92ec"
 ["0.0.23 - 0"]
 Compat = "34da2185-b29b-5c13-b0c7-acf172513d20"
 
+["0.0.27 - 0"]
+MacroTools = "1914dd2f-81c6-5fcd-8719-6d5c9610ff09"
+
 ["0.0.5 - 0"]
 PhysiCellXMLRules = "bad69253-e2d7-49f9-a0cf-2fd158c7c32b"
 Pkg = "44cfe95a-1eb2-52ea-b672-e2afdf69b78f"
