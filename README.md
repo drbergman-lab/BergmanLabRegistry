@@ -1,4 +1,4 @@
-# PCVCTRegistry
+# BergmanLabRegistry
 
 This will likely one day migrate to [here](https://github.com/drbergman-lab/BergmanLabRegistry).
 
@@ -22,10 +22,15 @@ The following options are recommended to change:
 - GitHubActions `extra_versions`: use `"lts","1","pre"`
 - `devbranch`: set to `development`
 
-### Add the PCVCTRegistry
-Make sure Julia knows about the PCVCTRegistry:
+### Add the BergmanLabRegistry
+Make sure Julia knows about the BergmanLabRegistry:
 ```julia-repl
 pkg> registry add https://github.com/drbergman/PCVCTRegistry.git
+```
+
+Soon to be replaced with:
+```julia-repl
+pkg> registry add https://github.com/drbergman-lab/BergmanLabRegistry.git
 ```
 
 ### Set up the GitHub actions
@@ -39,15 +44,23 @@ on:
       - development
 ```
 
-Add the PCVCTRegistry for **both** tests and docs
+Add the BergmanLabRegistry for **both** tests and docs
 ```yaml
 - uses: julia-actions/cache@v2
 
-- name: Add PCVCTRegistry
+- name: Add BergmanLabRegistry
   run: julia -e 'import Pkg; Pkg.Registry.add("General"); Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/drbergman/PCVCTRegistry.git"))'
 ```
 
-And set the TagBot to use the PCVCTRegistry:
+Soon to be replaced with:
+```yaml
+- uses: julia-actions/cache@v2
+
+- name: Add BergmanLabRegistry
+  run: julia -e 'import Pkg; Pkg.Registry.add("General"); Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/drbergman-lab/BergmanLabRegistry.git"))'
+```
+
+And set the TagBot to use the BergmanLabRegistry:
 ```yaml
 jobs:
   TagBot:
@@ -58,11 +71,11 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           ssh: ${{ secrets.DOCUMENTER_KEY }}
-          registry: drbergman/PCVCTRegistry # here!
+          registry: drbergman/PCVCTRegistry # soon to be replaced with drbergman-lab/BergmanLabRegistry
 ```
 
 ### Prepare first version and register
-After getting your first version ready, you can register it with the PCVCTRegistry:
+After getting your first version ready, you can register it with the BergmanLabRegistry:
 ```julia-repl
 julia> using LocalRegistry
 julia> register() # if you have other registries, you may need to specify which registry
