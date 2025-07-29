@@ -25,11 +25,6 @@ The following options are recommended to change:
 ### Add the BergmanLabRegistry
 Make sure Julia knows about the BergmanLabRegistry:
 ```julia-repl
-pkg> registry add https://github.com/drbergman/PCVCTRegistry.git
-```
-
-Soon to be replaced with:
-```julia-repl
 pkg> registry add https://github.com/drbergman-lab/BergmanLabRegistry.git
 ```
 
@@ -49,14 +44,6 @@ Add the BergmanLabRegistry for **both** tests and docs
 - uses: julia-actions/cache@v2
 
 - name: Add BergmanLabRegistry
-  run: julia -e 'import Pkg; Pkg.Registry.add("General"); Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/drbergman/PCVCTRegistry.git"))'
-```
-
-Soon to be replaced with:
-```yaml
-- uses: julia-actions/cache@v2
-
-- name: Add BergmanLabRegistry
   run: julia -e 'import Pkg; Pkg.Registry.add("General"); Pkg.Registry.add(Pkg.RegistrySpec(url="https://github.com/drbergman-lab/BergmanLabRegistry.git"))'
 ```
 
@@ -71,7 +58,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           ssh: ${{ secrets.DOCUMENTER_KEY }}
-          registry: drbergman/PCVCTRegistry # soon to be replaced with drbergman-lab/BergmanLabRegistry
+          registry: drbergman-lab/BergmanLabRegistry
 ```
 
 ### Prepare first version and register
