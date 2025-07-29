@@ -1,7 +1,5 @@
 # BergmanLabRegistry
 
-This will likely one day migrate to [here](https://github.com/drbergman-lab/BergmanLabRegistry).
-
 ## Steps to register a new package
 ### Create a new package using `PkgTemplates`
 Use the `PkgTemplates` package to create a new package:
