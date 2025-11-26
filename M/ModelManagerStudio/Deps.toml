@@ -12,3 +12,6 @@ Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
 
 ["0.0.7 - 0"]
 PhysiCellModelManager = "7582d1aa-5e58-4d65-a123-4418a61a2644"
+
+["0.0.8 - 0"]
+LineSearches = "d3d80556-e9d4-5f37-9878-2ab0fcc64255"
