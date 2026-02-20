@@ -47,3 +47,7 @@ PhysiCellECMCreator = "0.0.9"
 ["0.2-0"]
 MAT = "0.11"
 julia = "1.10.0-1"
+
+["0.2.1-0"]
+MetaGraphsNext = "0.7.2-0.8"
+PhysiCellXMLRules = "0.0.9"
