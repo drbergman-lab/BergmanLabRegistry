@@ -4,6 +4,7 @@ repo = "https://github.com/drbergman-lab/BergmanLabRegistry"
 
 [packages]
 1da3c5ec-5de6-497d-83f1-8bbf7fdc92ec = { name = "PairCorrelationFunction", path = "P/PairCorrelationFunction" }
+2cc58058-5792-4be5-9801-0e92bd3a2373 = { name = "ModelManager", path = "M/ModelManager" }
 3c374bc7-7384-4f83-8ca0-87b8c727e6ff = { name = "pcvct", path = "P/pcvct" }
 515ed340-d2f8-4e13-b70e-c9ebab3e992f = { name = "PhysiCellECMCreator", path = "P/PhysiCellECMCreator" }
 7582d1aa-5e58-4d65-a123-4418a61a2644 = { name = "PhysiCellModelManager", path = "P/PhysiCellModelManager" }
