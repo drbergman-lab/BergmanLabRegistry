@@ -48,8 +48,10 @@ LinearAlgebra = "1.10.0-1"
 ["0.1.7-0"]
 PhysiCellECMCreator = "0.0.9"
 
-["0.2-0"]
+["0.2"]
 MAT = "0.11"
+
+["0.2-0"]
 julia = "1.10.0-1"
 
 ["0.2.1-0"]
@@ -58,3 +60,8 @@ PhysiCellXMLRules = "0.0.9"
 
 ["0.2.2-0"]
 PhysiCellCellCreator = "0.0.9"
+
+["0.3-0"]
+MAT = "0.11-0.12"
+ModelManager = "0.7"
+Reexport = "1"

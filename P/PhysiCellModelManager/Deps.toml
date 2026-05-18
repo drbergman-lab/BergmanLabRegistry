@@ -33,3 +33,7 @@ Tables = "bd369af6-aec1-5ad0-b16a-f7cc5008161c"
 
 ["0-0.1.5"]
 LazyGrids = "7031d0ef-c40d-4431-b2f8-61a8d2f650db"
+
+["0.3-0"]
+ModelManager = "2cc58058-5792-4be5-9801-0e92bd3a2373"
+Reexport = "189a3867-3050-52da-a836-e630ba90ab69"
