@@ -11,6 +11,7 @@ repo = "https://github.com/drbergman-lab/BergmanLabRegistry"
 3e3f2270-f616-47a3-a2d7-3d5e12f50e92 = { name = "SmoreFit", path = "S/SmoreFit" }
 515ed340-d2f8-4e13-b70e-c9ebab3e992f = { name = "PhysiCellECMCreator", path = "P/PhysiCellECMCreator" }
 5c232813-7b28-4e6f-a96c-e027eca8fd3b = { name = "SmoreBase", path = "S/SmoreBase" }
+6350f8a7-223e-46b9-a8d9-8cdf5ad5c457 = { name = "SmoreExamples", path = "S/SmoreExamples" }
 7582d1aa-5e58-4d65-a123-4418a61a2644 = { name = "PhysiCellModelManager", path = "P/PhysiCellModelManager" }
 bad69253-e2d7-49f9-a0cf-2fd158c7c32b = { name = "PhysiCellXMLRules", path = "P/PhysiCellXMLRules" }
 eac91067-0c6e-4a29-b848-3b4e7cf67017 = { name = "PhysiCellCellCreator", path = "P/PhysiCellCellCreator" }
