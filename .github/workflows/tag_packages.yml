@@ -1,0 +1,22 @@
+# .github/workflows/tag_packages.yml  (in BergmanLabRegistry)
+name: Trigger TagBot
+on:
+  push:
+    branches: [main]
+
+jobs:
+  trigger:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+      - name: Dispatch to changed packages
+        env:
+          GH_TOKEN: ${{ secrets.TAGBOT_PAT }}
+        run: |
+          git diff --name-only HEAD~1 HEAD | grep 'Package.toml\|Versions.toml' | \
+          sed 's|.*/\([^/]*\)/[^/]*$|\1|' | sort -u | while read pkg; do
+            gh api repos/drbergman-lab/${pkg}.jl/dispatches \
+              -f event_type=TagBot || true
+          done
