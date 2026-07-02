@@ -21,7 +21,12 @@ SmoreBase = "0.2"
 SmoreFit = "0.2"
 SmoreGSA = "0.2"
 
-["0.3-0"]
+["0.3"]
 SmoreBase = "0.3"
 SmoreFit = "0.3"
 SmoreGSA = "0.3"
+
+["0.4-0"]
+SmoreBase = "0.4"
+SmoreFit = "0.4"
+SmoreGSA = "0.3.1-0.3"
