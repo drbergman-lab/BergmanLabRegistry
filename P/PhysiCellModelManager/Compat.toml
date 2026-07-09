@@ -67,9 +67,14 @@ PhysiCellCellCreator = "0.0.9"
 
 ["0.3-0"]
 MAT = "0.11-0.12"
-ModelManager = "0.7"
 Reexport = "1"
+
+["0.3-0.3.2"]
+ModelManager = "0.7"
 
 ["0.3.1-0"]
 Parameters = "0.12-0.13"
 PhysiCellXMLRules = "0.0.9-0.3"
+
+["0.3.3-0"]
+ModelManager = "0.8"
