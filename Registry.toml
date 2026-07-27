@@ -14,6 +14,7 @@ repo = "https://github.com/drbergman-lab/BergmanLabRegistry"
 61ac5edc-a73d-4441-b68d-d9b510422d04 = { name = "PhysiCellOutput", path = "P/PhysiCellOutput" }
 6350f8a7-223e-46b9-a8d9-8cdf5ad5c457 = { name = "SmoreExamples", path = "S/SmoreExamples" }
 7582d1aa-5e58-4d65-a123-4418a61a2644 = { name = "PhysiCellModelManager", path = "P/PhysiCellModelManager" }
+b5316104-0607-4250-a2f2-009686a1a11b = { name = "Montage", path = "M/Montage" }
 bad69253-e2d7-49f9-a0cf-2fd158c7c32b = { name = "PhysiCellXMLRules", path = "P/PhysiCellXMLRules" }
 eac91067-0c6e-4a29-b848-3b4e7cf67017 = { name = "PhysiCellCellCreator", path = "P/PhysiCellCellCreator" }
 ec939353-8009-4f22-a497-1a1b0ca06ccd = { name = "ModelManagerStudio", path = "M/ModelManagerStudio" }
