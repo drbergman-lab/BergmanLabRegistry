@@ -36,3 +36,6 @@ NearestNeighbors = "b8a86587-4115-5ab1-83bc-aa920d37bbce"
 
 ["0.7.3-0"]
 ProgressMeter = "92933f4c-e287-5a05-a399-4b506db050ca"
+
+["0.8.3-0"]
+LibGit2 = "76f85450-5226-5b5a-8eaa-529ad045b433"
