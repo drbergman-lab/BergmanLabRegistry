@@ -2,6 +2,11 @@
 Cairo = "1.1.1-1"
 CairoMakie = "0.15"
 FFMPEG = "0.4.5-0.4"
-PhysiCellModelManager = "0.3"
 PhysiCellOutput = "0.1"
 Rsvg = "1.1.0-1"
+
+["0-0.2"]
+PhysiCellModelManager = "0.3"
+
+["0.3-0"]
+PhysiCellModelManager = "0.4-0.5"
