@@ -1,0 +1,4 @@
+[0]
+Makie = "0.24.11-0.24"
+PhysiCellModelManager = "0.6"
+PhysiCellOutput = "0.1"
