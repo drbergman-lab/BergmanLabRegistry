@@ -8,7 +8,6 @@ FFTW = "1"
 Glob = "1"
 GlobalSensitivity = "2"
 Graphs = "1.12.0-1"
-JSON3 = "1.14.1-1"
 LightXML = "0.9"
 MacroTools = "0.5.16-0.5"
 PairCorrelationFunction = "0.0.11"
@@ -44,6 +43,9 @@ Parameters = "0.12"
 
 ["0-0.5"]
 CSV = "0.10"
+
+["0-0.6.0"]
+JSON3 = "1.14.1-1"
 
 ["0.1.6"]
 PhysiCellECMCreator = "0.0.8"
@@ -99,3 +101,6 @@ ModelManager = "0.10"
 CSV = ["0.10", "1"]
 ModelManager = "0.12"
 PhysiCellCellCreator = "0.1"
+
+["0.6.1-0"]
+JSON = "1"
