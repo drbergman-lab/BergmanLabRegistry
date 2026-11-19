@@ -4,3 +4,6 @@ RecipesBase = "3cdcf5f2-1ef4-517c-9805-6587b60abb01"
 
 ["0-0.2"]
 Makie = "ee78f7c6-11fb-53f2-987a-cfe4a2b5a57a"
+
+["0.5.2-0"]
+PhysiCellModelManager = "7582d1aa-5e58-4d65-a123-4418a61a2644"
