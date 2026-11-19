@@ -103,8 +103,10 @@ ModelManager = "0.10"
 
 ["0.6-0"]
 CSV = ["0.10", "1"]
-ModelManager = "0.12"
 PhysiCellCellCreator = "0.1"
+
+["0.6-0.6.3"]
+ModelManager = "0.12"
 
 ["0.6.1-0"]
 JSON = "1"
@@ -112,3 +114,6 @@ JSON = "1"
 ["0.6.2-0"]
 PairCorrelationFunction = "0.0.11-0.0.12"
 PhysiCellECMCreator = ["0.0.9", "0.1"]
+
+["0.6.4-0"]
+ModelManager = "0.12.5-0.12"
